@@ -19,7 +19,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.json = {
       run_list: [
         "yum::exclude_kernel",
-        "nginx"
+        "rbenv",
+        "rbenv::ruby_build"
       ]
     }
 
